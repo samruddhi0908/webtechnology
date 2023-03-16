@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Metro Ticket Booking</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Metro Ticket Booking</h1>
+	</header>
+
+	<main>
+		<form>
+			<label for="from">From:</label>
+			<select id="from">
+				<option value="station1">Station 1</option>
+				<option value="station2">Station 2</option>
+				<option value="station3">Station 3</option>
+			</select>
+
+			<label for="to">To:</label>
+			<select id="to">
+				<option value="station1">Station 1</option>
+				<option value="station2">Station 2</option>
+				<option value="station3">Station 3</option>
+			</select>
+
+			<label for="quantity">Quantity:</label>
+			<input type="number" id="quantity" min="1" max="10" value="1">
+
+			<input type="button" value="Book Now" onclick="bookTicket()">
+		</form>
+	</main>
+
+	<footer>
+		<p>&copy; 2023 Metro Ticket Booking. All rights reserved.</p>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+</html>
